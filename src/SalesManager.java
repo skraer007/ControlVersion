@@ -16,16 +16,16 @@ public class SalesManager {
     }
 
     public int average(){
-        int min = max();
-        for (int sale : sales) {
+        long min = max();
+        for (long sale : sales) {
             if (sale < min) {
                 min = sale;
             }
         }
-        int max = max();
+        long max = max();
         int amount = 0;
         int sum = 0;
-        for (int sale : sales) {
+        for (long sale : sales) {
             if (sale == max | sale == min) {
                 continue;
             } else {
